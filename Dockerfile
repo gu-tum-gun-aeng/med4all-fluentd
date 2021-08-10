@@ -11,7 +11,7 @@ RUN apk add --no-cache --update --virtual .build-deps \
  && gem install fluent-plugin-cloudwatch-logs \
  && gem install fluent-plugin-rewrite-tag-filter \
  && gem install fluent-plugin-elasticsearch \
- && gem install elasticsearch -v 7.13.3 \
+ && gem install fluent-plugin-aws-elasticsearch-service \
  && gem install fluent-plugin-influxdb-v2 \
  && gem sources --clear-all \
  && apk del .build-deps \
